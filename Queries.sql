@@ -1,3 +1,5 @@
+/*Create command*/
+
 create database UMS;
 
 use UMS;
@@ -146,33 +148,32 @@ insert into students values
 (1, 2, 'Fadeela', 'Naqash', 'fadee@', 777777, '21-09-2001', 'F', 2025, 'Admitted', 1),
 (2, 1, 'Khushboo', 'Jan', 'jan@', 888888, '1-01-2002', 'F', 2025, 'Admitted', 2);
 
+
+/*Retrieval command*/
+select * from Students;
+
+select * from Departments;
+
+select * from Faculty;
+
+select * from Courses;
+
+select * from Erollments;
+
+select * from Attendance;
+
+select * from exams;
+
+select * from results;
+
+select * from fees;
+  
 delete from attendance 
 where attendance_id = 2;
 
-delete from courses
-where course_id = 2;
 
-delete from students
-where student_id = 2; 
 
-delete from faculty
-where faculty_id = 2;
-
-delete from departments
-where department_id = 2;
-
-delete from enrollments
-where enrollment_id = 2;
-
-delete from exams
-where exam_id = 2;
-
-delete from fees
-where fee_id = 2;
-
-delete from results
-where result_id = 2;
-
+/*Update command*/
 update attendance
 set date = '12-2-2024';
 
@@ -207,6 +208,33 @@ where fee_id = 1;
 update results
 set grade = 'O+'
 where result_id = 1;
+
+
+
+/*Delete Command*/
+delete from courses
+where course_id = 2;
+
+delete from students
+where student_id = 2; 
+
+delete from faculty
+where faculty_id = 2;
+
+delete from departments
+where department_id = 2;
+
+delete from enrollments
+where enrollment_id = 2;
+
+delete from exams
+where exam_id = 2;
+
+delete from fees
+where fee_id = 2;
+
+delete from results
+where result_id = 2;
 
 drop table attendance;
 
